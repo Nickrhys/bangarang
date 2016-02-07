@@ -18,12 +18,9 @@ body{
 
 .text-wrapper{
   position: absolute;
-  margin: 5%;
+  margin: 12%;
   text-decoration: none;
   color: #66ff66;
-  @media screen and (max-width: 768px) {
-    margin-top: 14%;
-  }
 }
 
 .bangarang{
@@ -35,21 +32,18 @@ body{
   &:hover{
   color: #66FF66;
   }
-  @media screen and (max-width: 768px) {
-    font-size: 200%;
-  }
-  @media screen and (max-width: 736px) {
+  @media screen and (max-width: 735px) {
     font-size: 125%;
   }
 }
 
 #about-wrapper{
-  max-width: 760px;
+  max-width: 768px;
   min-height: 640px;
-  margin-left: 150px;
+  margin-left: 100px;
   margin-top: 75px;
   color: white;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 965px) {
     padding: 0px;
     margin: 10px;
   }
