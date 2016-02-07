@@ -1,0 +1,47 @@
+<div id="about-wrapper">
+  <ul class="accordion">
+    <li class="content">
+      <a class="accordion-control">DJING</a>
+      <div class="accordion-panel">BANGARANG SOUNDS HAVE BEEN REGAULARLY PLAYING ECLECTIC, PURE VINYL SETS IN PUBS AND BARS THROUGHOUT LONDON FOR OVER FIVE YEARS. WE'RE ALWAYS OPEN TO PLAYING NEW VENUES.</div>
+    </li>
+    <li class="content">
+      <a class="accordion-control">OUR MUSIC</a>
+      <div class="accordion-panel">
+        <div class="list">ARETHA - BOWIE - CHIC - DEKKER - EDWIN - FUNKADELIC - GRACE - HOLLY - ISSAC</div> 
+        <div class="list">JACKSON - KINKS - LOVE - MARVIN - N.E.R.D - OTIS - PARLIAMENT - Q-TIP - RONETTES</div> 
+        <div class="list">STONES - TOOTS - UPSETTERS - VELVETS - WONDER - XTC - YARDBIRDS - ZAPPA</div> 
+        <br>
+        <a class= "list" href="https://open.spotify.com/user/nickrhys/playlist/7fAeuwKoPrqt0JCJwYkgtN">WHAT WE'RE LISTENING TO</a>
+        <br>
+        <br>
+        <a class= "list" href="https://www.mixcloud.com/nick-roberts6/">BANGARANG SOUNDS ON MIXCLOUD</a>
+      </div>
+    </li>
+    <li class="content">
+      <a class="accordion-control">PARTY BOOKINGS</a>
+      <div class="accordion-panel"> 
+        HAVING A BIRTHDAY, ENGAGEMENT, WEDDING, ANNIVERSARY OR "FOR THE HELL OF IT" PARTY? IS THE MUSIC AT YOUR DO IMPORTANT TO YOU? CONTACT US FOR A CHAT.
+      </div>
+    </li>
+    <li class="content">
+      <a class="accordion-control">CONTACT</a>
+      <div class="accordion-panel">
+        <div class="list">EMAIL: <%= mail_to "HELLOFROMBANGMUSIC@GMAIL.COM", "hellofrombangmusic@gmail.com"%></div> 
+        <br>
+       <div class="list">TEL:  07918 883 556</div>
+      </div>  
+    </li>
+  </ul>
+</div>
+<script>
+$('.accordion').on('click', '.accordion-control', function(e){
+  e.preventDefault();
+  $(this)
+    .next('.accordion-panel')
+    .not(':animated')
+    .slideToggle();
+});
+</script>
+
+
+ 
