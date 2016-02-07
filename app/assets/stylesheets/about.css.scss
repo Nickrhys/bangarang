@@ -21,6 +21,9 @@ body{
   margin: 5%;
   text-decoration: none;
   color: #66ff66;
+  @media screen and (max-width: 768px) {
+    margin-top: 14%;
+  }
 }
 
 .bangarang{
@@ -35,6 +38,9 @@ body{
   @media screen and (max-width: 768px) {
     font-size: 200%;
   }
+  @media screen and (max-width: 736px) {
+    font-size: 125%;
+  }
 }
 
 #about-wrapper{
@@ -44,7 +50,8 @@ body{
   margin-top: 75px;
   color: white;
   @media screen and (max-width: 768px) {
-    margin-left: 0px;
+    padding: 0px;
+    margin: 10px;
   }
 }
 
@@ -54,12 +61,21 @@ body{
   cursor: pointer;
 }
 
+.accordion{
+ @media screen and (max-width: 768px) {
+    padding: 10px;
+  } 
+}
+
 .accordion-control{
- font-size: 35px;
- color: #66FF66;
- &:hover{
- color: white;
- }
+  font-size: 35px;
+  color: #66FF66;
+  &:hover{
+    color: white;
+  }
+  @media screen and (max-width: 736px) {
+    font-size: 25px;
+  }
 }
 
 .accordion-panel{
@@ -67,6 +83,12 @@ body{
   margin-top: 10px;
   font-size: 15px;
   color: white;
+  @media screen and (max-width: 736px) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: 320px) {
+    font-size: 10px;
+  }
 }
 
 a{
